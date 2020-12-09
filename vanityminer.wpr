@@ -1,0 +1,29 @@
+#!wing
+#!version=7.0
+##################################################################
+# Wing project file                                              #
+##################################################################
+[project attributes]
+debug.launch-configs = (2,
+                        {'launch-vXxsE325O6Y9AuLU': ({'shared': True},
+        {'buildcmd': ('project',
+                      None),
+         'env': ('default',
+                 [u'']),
+         'name': 'testing',
+         'pyexec': ('project',
+                    u''),
+         'pypath': ('project',
+                    []),
+         'pyrunargs': ('project',
+                       '-u'),
+         'runargs': u'',
+         'rundir': ('project',
+                    u'')})})
+proj.file-list = [loc('bip39.py'),
+                  loc('vanityminer.py')]
+proj.file-type = 'shared'
+proj.launch-config = {loc('vanityminer.py'): ('custom',
+        (u'',
+         'launch-vXxsE325O6Y9AuLU'))}
+proj.main-file = loc('vanityminer.py')
